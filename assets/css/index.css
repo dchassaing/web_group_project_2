@@ -3,17 +3,59 @@ html, body, h1, h2, h3, p {
   padding: 0;
   border: 0;
   margin: 0;
-  font-size: 100%;
   font: inherit;
 }
 
 html {
-  font-size: 16px;
+  font-size: 62.5%; /* 10px / 16px / 1rem */
 }
-body {
+/*body {
   font-family: "PT Sans Narrow Bold", sans-serif;
   color: #323232;
   max-width: 1230px;
   margin: 0 auto;
-  }
+  }*/
+
 /*main styles*/
+
+h1{
+  font: 2.1em, 'Oswald', sans-serif;
+  color: #303030;
+}
+
+p{
+  font: 1em 'Lato', sans-serif;
+  color: #303030;
+  line-height: 1.6em;
+}
+
+p.a{
+  font: italic 700 1em 'Lato', sans-serif;
+  color: #be5f27;
+}
+
+p.a:hover{
+  font: italic 700 1em 'Lato', sans-serif;
+  color: #d49b3c;
+  text-decoration: underline;
+}
+
+h2{
+  font: 1.56em 'Oswald', sans-serif;
+  color: #f2f2f2;
+}
+
+h2.a{
+  font: italic 1.56em 'Oswald', sans-serif;
+  color: #f2f2f2;
+  text-decoration: underline;
+}
+
+.form input{
+  width: 500px;
+  margin-bottom: 25px;
+}
+
+.form input[type=submit], label[form=custom]{
+display: inline;
+}
