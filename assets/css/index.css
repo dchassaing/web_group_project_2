@@ -1,14 +1,17 @@
 /*overall styles*/
+
 html, body, h1, h2, h3, p {
-  padding: 0;
-  border: 0;
-  margin: 0;
-  font: inherit;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font: inherit;
 }
 
 html {
-  font-size: 62.5%; /* 10px / 16px / 1rem */
+    font-size: 62.5%;
+    /* 10px / 16px / 1rem */
 }
+
 
 /*
 body {
@@ -18,101 +21,146 @@ body {
   margin: 0 auto;
   }*/
 
+
 /*main styles*/
 
-h1{
-  font: 2.1em, 'Oswald', sans-serif;
-  color: #303030;
+h1 {
+    font: 2.1em 'Oswald', sans-serif;
+    color: #303030;
 }
 
-p{
-  font: 1em 'Lato', sans-serif;
-  color: #303030;
-  line-height: 1.6em;
+p {
+    font: 1em 'Lato', sans-serif;
+    color: #303030;
+    line-height: 1.6em;
 }
 
-p a{
-  font: italic 700 1em 'Lato', sans-serif;
-  color: #be5f27;
+p a {
+    font: italic 700 1em 'Lato', sans-serif;
+    color: #be5f27;
 }
 
-p a:hover{
-  font: italic 700 1em 'Lato', sans-serif;
-  color: #d49b3c;
-  text-decoration: underline;
+p a:hover {
+    font: italic 700 1em 'Lato', sans-serif;
+    color: #d49b3c;
+    text-decoration: underline;
 }
 
-h2{
-  font: 1.56em 'Oswald', sans-serif;
-  color: #f2f2f2;
+h2 {
+    font: 1.56em 'Oswald', sans-serif;
+    color: #f2f2f2;
 }
 
-h2 a{
-  font: italic 1.56em 'Oswald', sans-serif;
-  color: #f2f2f2;
-  text-decoration: underline;
+h2 a {
+    font: italic 1.56em 'Oswald', sans-serif;
+    color: #f2f2f2;
+    text-decoration: underline;
 }
 
-.splash{
-  max-width: 100%;
-  z-index: 0;
+.splash {
+    width: 100%;
+    z-index: 0;
 }
 
-.form input{
-  width: 500px;
-  margin-bottom: 25px;
+.form input {
+    width: 500px;
+    margin-bottom: 25px;
 }
 
-.form input[type=submit], label[form=custom]{
-display: inline;
+.form input[type=submit], label[form=custom] {
+    display: inline;
 }
+
 
 /*class styles*/
 
-header{
-  height: 815px;
+header {
+    height: 815px;
+    overflow: hidden;
 }
 
-header ul{
+header ul {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fix-logo {
+    width: 140px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    opacity: 0.9;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 215px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    font: 1.06em 'Lato', sans-serif;
+    color: #303030;
+}
+
+.get-your-fix{
   display: flex;
-  flex-flow: nowrap row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  flex-flow:row nowrap;
 }
 
-#fix-logo{
-  width: 140px;
+.get-your-fix-box {
+    background-color: #d49b30;
+    z-index: 1;
+    order: 0;
+    flex-shrink: 0.1;
+    align-self: flex-start;
+    position: absolute;
 }
 
-nav{
-  background-color: #f2f2f2;
-  opacity: 0.9;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 215px;
+.get-your-fix-box h1 {
+    color: rgb(255, 255, 255);
 }
 
-nav ul{
+.white-about-box{
+  z-index: 0;
+  order: 1;
+}
+
+.example-cakes{
+  background-color: #c3bbac;
+  z-index: 0;
+  order: 2;
+}
+
+.white-about-box, .example-cakes{
+  flex-basis: 50%;
+}
+
+.example-cakes ul{
   list-style-type: none;
+  text-align: center;
 }
 
-nav ul li{
-  font: 1.06em 'Lato', sans-serif;
-  color: #303030;
+.white-cake-icon{
+  width: 80px;
+  display: flex;
+  align-self: center;
 }
 
-.get-your-fix-box{
-  background-color: #d49b30;
-  position: relative;
-  bottom: 0;
-  z-index: 1;
-}
-
-.get-your-fix-box h1{
-  color: rgb(255, 255, 255);
+.example-cakes ul li{
+  font: 700 3.25em 'Oswald', sans-serif;
+  line-height: 70%;
+  color: #f2f2f2;
+  text-transform: uppercase;
 }
 /*media queries:
 tablet: 680px
