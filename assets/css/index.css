@@ -162,6 +162,10 @@ nav ul li {
   color: #f2f2f2;
   text-transform: uppercase;
 }
+
+footer{
+  background-color: #be5f27;
+}
 /*media queries:
 tablet: 680px
 phone: 480px
