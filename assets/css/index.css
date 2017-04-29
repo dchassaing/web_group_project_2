@@ -152,8 +152,6 @@ nav ul li {
 
 .white-cake-icon{
   width: 80px;
-  display: fl
-  align-self: center;
 }
 
 .example-cakes ul li{
@@ -165,6 +163,36 @@ nav ul li {
 
 footer{
   background-color: #be5f27;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.address-box p {
+    align-self: flex-start;
+    color: #ffffff;
+}
+
+.fix-cakes-white-logo{
+    align-self: center;;
+}
+
+.get-your-fix-box h1 {
+    color: rgb(255, 255, 255);
+}
+
+.white-about-box{
+  z-index: 0;
+  order: 1;
+}
+
+.example-cakes{
+  background-color: #c3bbac;
+  z-index: 0;
+  order: 2;
+}
+
+.white-about-box, .example-cakes{
+  flex-basis: 50%;
 }
 /*media queries:
 tablet: 680px
