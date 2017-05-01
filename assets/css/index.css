@@ -139,6 +139,7 @@ nav ul li {
   background-color: #c3bbac;
   z-index: 0;
   order: 2;
+  text-align: center;
 }
 
 .white-about-box, .example-cakes{
@@ -152,6 +153,7 @@ nav ul li {
 
 .white-cake-icon{
   width: 80px;
+
 }
 
 .example-cakes ul li{
@@ -161,39 +163,55 @@ nav ul li {
   text-transform: uppercase;
 }
 
+.hours-section{
+  display: flex;
+  justify-content: space-around;
+  background-color: #8e5942;
+  height: 220px;
+}
+
+.hours-section ul {
+    list-style-type: none;
+}
+
+.hours-section ul li {
+    font: 2.1em 'Oswald', sans-serif;
+    color: #ffffff;
+}
+
+#hours-tues-sat{
+  justify-content: flex-start;
+  align-items:
+}
+
+#hours-sun{
+  justify-content: center;
+}
+
+#hours-mon{
+  justify-content: flex-end;
+}
+
 footer{
   background-color: #be5f27;
   display: flex;
   flex-flow: nowrap;
+  justify-content: space-around;
 }
 
-.address-box p {
-    align-self: flex-start;
+.address-box{
+    justify-content: flex-start;
     color: #ffffff;
 }
 
 .fix-cakes-white-logo{
-    align-self: center;;
+    justify-content: center;
 }
 
-.get-your-fix-box h1 {
-    color: rgb(255, 255, 255);
+.contact-info{
+  justify-content: flex-end;
 }
 
-.white-about-box{
-  z-index: 0;
-  order: 1;
-}
-
-.example-cakes{
-  background-color: #c3bbac;
-  z-index: 0;
-  order: 2;
-}
-
-.white-about-box, .example-cakes{
-  flex-basis: 50%;
-}
 /*media queries:
 tablet: 680px
 phone: 480px
