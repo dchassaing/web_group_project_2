@@ -62,14 +62,15 @@ h2 a {
     z-index: 0;
 }
 
-.form input {
+
+/*.form input {
     width: 500px;
     margin-bottom: 25px;
 }
 
 .form input[type=submit], label[form=custom] {
     display: inline;
-}
+}*/
 
 
 /*class styles*/
@@ -110,11 +111,11 @@ nav ul li {
     color: #303030;
 }
 
-.get-your-fix{
-  display: flex;
-  justify-content: center;
-  z-index: -1;
-  flex-flow:row nowrap;
+.get-your-fix {
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    flex-flow: row nowrap;
 }
 
 .get-your-fix-box {
@@ -130,48 +131,49 @@ nav ul li {
     color: rgb(255, 255, 255);
 }
 
-.white-about-box{
-  z-index: 0;
-  order: 1;
+.white-about-box {
+    z-index: 0;
+    order: 1;
 }
 
-.example-cakes{
-  background-color: #c3bbac;
-  z-index: 0;
-  order: 2;
-  text-align: center;
+.example-cakes {
+    background-color: #c3bbac;
+    z-index: 0;
+    order: 2;
+    text-align: center;
 }
 
-.white-about-box, .example-cakes{
-  flex-basis: 50%;
+.white-about-box, .example-cakes {
+    flex-basis: 50%;
 }
 
-.example-cakes ul{
-  list-style-type: none;
-  text-align: center;
+.example-cakes ul {
+    list-style-type: none;
+    text-align: center;
 }
 
-.white-cake-icon{
-  width: 80px;
-
+.white-cake-icon {
+    width: 80px;
 }
 
-.example-cakes ul li{
-  font: 700 3.25em 'Oswald', sans-serif;
-  line-height: 70%;
-  color: #f2f2f2;
-  text-transform: uppercase;
+.example-cakes ul li {
+    font: 700 3.25em 'Oswald', sans-serif;
+    line-height: 70%;
+    color: #f2f2f2;
+    text-transform: uppercase;
 }
 
-.hours-section{
-  display: flex;
-  justify-content: space-around;
-  background-color: #8e5942;
-  height: 220px;
+.hours-section {
+    background-color: #8e5942;
+    height: 220px;
 }
 
 .hours-section ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .hours-section ul li {
@@ -179,38 +181,55 @@ nav ul li {
     color: #ffffff;
 }
 
-#hours-tues-sat{
-  justify-content: flex-start;
-  align-items:
+.hours-section ul li:nth-child(1) {
+    justify-content: flex-start;
 }
 
-#hours-sun{
-  justify-content: center;
+.hours-section ul li:nth-child(2) {
+    justify-content: center;
 }
 
-#hours-mon{
-  justify-content: flex-end;
+.hours-section ul li:nth-child(3) {
+    justify-content: flex-end;
 }
 
-footer{
-  background-color: #be5f27;
+.parent-container{
   display: flex;
-  flex-flow: nowrap;
-  justify-content: space-around;
+  flex-flow: row nowrap;
 }
 
-.address-box{
+.tirasmisu + .love{
+
+}
+
+.made-from-scratch + .prep{
+
+}
+
+.carrot-cake + .custom-orders{
+
+}
+
+footer {
+    background-color: #be5f27;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+}
+
+.address-box {
     justify-content: flex-start;
     color: #ffffff;
 }
 
-.fix-cakes-white-logo{
+.fix-cakes-white-logo {
     justify-content: center;
 }
 
-.contact-info{
-  justify-content: flex-end;
+.contact-info {
+    justify-content: flex-end;
 }
+
 
 /*media queries:
 tablet: 680px
