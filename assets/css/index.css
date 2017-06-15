@@ -12,17 +12,7 @@ html {
     /* 10px / 16px / 1rem */
 }
 
-
-/*
-body {
-  font-family: "PT Sans Narrow Bold", sans-serif;
-  color: #323232;
-  max-width: 1230px;
-  margin: 0 auto;
-  }*/
-
-
-/*main styles*/
+/*main index styles*/
 
 h1 {
     font: 2.1em 'Oswald', sans-serif;
@@ -33,6 +23,10 @@ p {
     font: 1em 'Lato', sans-serif;
     color: #303030;
     line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
 }
 
 p a {
@@ -82,7 +76,7 @@ header {
 
 header ul {
     display: flex;
-    flex-flow: nowrap row;
+    flex-flow: nowrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -102,10 +96,6 @@ nav {
     height: 215px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
 nav ul li {
     font: 1.06em 'Lato', sans-serif;
     color: #303030;
@@ -118,7 +108,7 @@ nav ul li {
     flex-flow: row nowrap;
 }
 
-.get-your-fix-box {
+.banner-style {
     background-color: #d49b30;
     z-index: 1;
     order: 0;
@@ -127,7 +117,7 @@ nav ul li {
     position: absolute;
 }
 
-.get-your-fix-box h1 {
+.banner-style h1 {
     color: rgb(255, 255, 255);
 }
 
@@ -148,7 +138,6 @@ nav ul li {
 }
 
 .example-cakes ul {
-    list-style-type: none;
     text-align: center;
 }
 
@@ -193,22 +182,16 @@ nav ul li {
     justify-content: flex-end;
 }
 
-.parent-container{
-  display: flex;
-  flex-flow: row nowrap;
+.parent-container {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-.tirasmisu + .love{
+.tirasmisu+.love {}
 
-}
+.made-from-scratch+.prep {}
 
-.made-from-scratch + .prep{
-
-}
-
-.carrot-cake + .custom-orders{
-
-}
+.carrot-cake+.custom-orders {}
 
 footer {
     background-color: #be5f27;
