@@ -54,6 +54,7 @@ h2 a {
 .splash {
     width: 100%;
     z-index: 0;
+    height: 615px;
 }
 
 
@@ -69,10 +70,10 @@ h2 a {
 
 /*class styles*/
 
-header {
+/*header {
     height: 815px;
     overflow: hidden;
-}
+}*/
 
 header ul {
     display: flex;
@@ -85,7 +86,7 @@ header ul {
     width: 140px;
 }
 
-nav {
+nav ul {
     background-color: #f2f2f2;
     opacity: 0.9;
     z-index: 1;
@@ -94,6 +95,7 @@ nav {
     right: 0;
     width: 100%;
     height: 215px;
+    margin: 0px;
 }
 
 nav ul li {
@@ -106,6 +108,7 @@ nav ul li {
     justify-content: center;
     z-index: -1;
     flex-flow: row nowrap;
+    margin: 10px;
 }
 
 .banner-style {
@@ -152,25 +155,25 @@ nav ul li {
     text-transform: uppercase;
 }
 
-.hours-section {
+
+#hours {
     background-color: #8e5942;
     height: 220px;
-}
-
-.hours-section ul {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.hours-section ul li {
+#hours li {
     font: 2.1em 'Oswald', sans-serif;
     color: #ffffff;
 }
 
-.hours-section ul li:nth-child(1) {
+/*.hours-section ul li:nth-child(1) {
     justify-content: flex-start;
 }
 
@@ -180,7 +183,7 @@ nav ul li {
 
 .hours-section ul li:nth-child(3) {
     justify-content: flex-end;
-}
+}*/
 
 .parent-container {
     display: flex;
