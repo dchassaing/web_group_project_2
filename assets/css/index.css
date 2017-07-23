@@ -51,6 +51,23 @@ h2 a {
     text-decoration: underline;
 }
 
+h2 a:hover {
+    font: italic 1.56em 'Oswald', sans-serif;
+    color: #d49b30;
+}
+
+h3 {
+    font: 1.125em 'Lato Black', sans-serif;
+    color: #8e5942;
+    text-transform: uppercase;
+}
+
+h4 {
+  font: 1.125em 'Lato Light', sans-serif;
+  color: #8e5942;
+  text-transform: uppercase;
+}
+
 .splash {
     width: 100%;
     z-index: 0;
@@ -75,6 +92,8 @@ h2 a {
     overflow: hidden;
 }*/
 
+/*index styles*/
+
 header ul {
     display: flex;
     flex-flow: nowrap;
@@ -98,9 +117,10 @@ nav ul {
     margin: 0px;
 }
 
-nav ul li {
+nav ul li a{
     font: 1.06em 'Lato', sans-serif;
     color: #303030;
+    text-decoration: none;
 }
 
 .get-your-fix {
@@ -166,28 +186,13 @@ nav ul li {
     padding-right: 40px;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-
-#hours li {
     font: 2.1em 'Oswald', sans-serif;
     color: #ffffff;
 }
 
-/*.hours-section ul li:nth-child(1) {
-    justify-content: flex-start;
-}
-
-.hours-section ul li:nth-child(2) {
-    justify-content: center;
-}
-
-.hours-section ul li:nth-child(3) {
-    justify-content: flex-end;
-}*/
-
 .parent-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: nowrap;
 }
 
 .tirasmisu+.love {}
@@ -201,6 +206,14 @@ footer {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+  font: 0.9em 'Oswald Regular', sans-serif;
+  color: #f2f2f2;
+  text-transform: uppercase;
+
 }
 
 .address-box {
@@ -210,6 +223,11 @@ footer {
 
 .fix-cakes-white-logo {
     justify-content: center;
+    width: 100px;
+}
+
+.facebook-icon, .twitter-icon, .instagram-icon {
+  height: 38px;
 }
 
 .contact-info {
