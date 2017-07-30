@@ -193,25 +193,41 @@ nav ul li a{
 
 /*picture and icons section*/
 
-.parent-container {
-    display: flex;
-    /*flex-flow: nowrap;*/
+
+.promises p {
+  font: 700 2.5em 'Oswald', sans-serif;
+  color: #c3bbac;
+  line-height: 70%;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.tirasmisu+.love {
-  flex-grow: 50%;
+.band-1 {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 50%;
+    align-items: center;
 }
 
 .tirasmisu {
   order: 0;
+  flex-grow: 70%;
 }
 
 .love {
   order: 1;
 }
 
-.made-from-scratch+.prep {
-  flex-grow: 50%;
+.heart {
+  width: 80px;
+  text-align: center;
+}
+
+.band-2 {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 50%;
+  align-items: center;
 }
 
 .made-from-scratch {
@@ -220,18 +236,33 @@ nav ul li a{
 
 .prep {
   order: 3;
+  flex-grow: 70%;
 }
 
-.carrot-cake+.custom-orders {
-  flex-grow: 50%;
+.whisk {
+  width: 80px;
+  text-align: center;
+}
+
+.band-3 {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 50%;
+  align-items: center;
 }
 
 .carrot-cake {
   order: 4;
+  flex-grow: 70%;
 }
 
 .custom-orders {
     order: 5;
+}
+
+.lightbulb {
+  width: 80px;
+  text-align: center;
 }
 
 footer {
