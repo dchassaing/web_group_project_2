@@ -298,7 +298,15 @@ footer p{
     justify-content: flex-end;
 }
 
+/*Menu Page Styles*/
 
+.cakes {
+  visibility: visible;
+}
+
+.other {
+  visibility: hidden;
+}
 /*media queries:
 tablet: 680px
 phone: 480px
