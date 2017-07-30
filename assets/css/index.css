@@ -19,27 +19,6 @@ h1 {
     color: #303030;
 }
 
-p {
-    font: 1em 'Lato', sans-serif;
-    color: #303030;
-    line-height: 1.6em;
-}
-
-ul {
-    list-style-type: none;
-}
-
-p a {
-    font: italic 700 1em 'Lato', sans-serif;
-    color: #be5f27;
-}
-
-p a:hover {
-    font: italic 700 1em 'Lato', sans-serif;
-    color: #d49b3c;
-    text-decoration: underline;
-}
-
 h2 {
     font: 1.56em 'Oswald', sans-serif;
     color: #f2f2f2;
@@ -54,6 +33,7 @@ h2 a {
 h2 a:hover {
     font: italic 1.56em 'Oswald', sans-serif;
     color: #d49b30;
+    text-decoration: underline;
 }
 
 h3 {
@@ -66,6 +46,27 @@ h4 {
   font: 1.125em 'Lato Light', sans-serif;
   color: #8e5942;
   text-transform: uppercase;
+}
+
+p {
+    font: 1em 'Lato', sans-serif;
+    color: #303030;
+    line-height: 1.6em;
+}
+
+p a {
+    font: italic 700 1em 'Lato', sans-serif;
+    color: #be5f27;
+}
+
+p a:hover {
+    font: italic 700 1em 'Lato', sans-serif;
+    color: #d49b3c;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .splash {
@@ -190,16 +191,48 @@ nav ul li a{
     color: #ffffff;
 }
 
+/*picture and icons section*/
+
 .parent-container {
     display: flex;
-    flex-flow: nowrap;
+    /*flex-flow: nowrap;*/
 }
 
-.tirasmisu+.love {}
+.tirasmisu+.love {
+  flex-grow: 50%;
+}
 
-.made-from-scratch+.prep {}
+.tirasmisu {
+  order: 0;
+}
 
-.carrot-cake+.custom-orders {}
+.love {
+  order: 1;
+}
+
+.made-from-scratch+.prep {
+  flex-grow: 50%;
+}
+
+.made-from-scratch {
+  order: 2;
+}
+
+.prep {
+  order: 3;
+}
+
+.carrot-cake+.custom-orders {
+  flex-grow: 50%;
+}
+
+.carrot-cake {
+  order: 4;
+}
+
+.custom-orders {
+    order: 5;
+}
 
 footer {
     background-color: #be5f27;
